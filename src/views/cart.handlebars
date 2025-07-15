@@ -1,0 +1,11 @@
+<h1>Carrito</h1>
+
+{{#each products}}
+<div class="card">
+    <h3>{{this.title}}</h3>
+    <p>{{this.description}}</p>
+    <a class="btn" href="{{this.id}}/delete">Eliminar</a>
+    
+</div>
+
+{{/each}}
