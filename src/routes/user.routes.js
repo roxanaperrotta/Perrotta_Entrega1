@@ -30,4 +30,16 @@ router.get('/current', passportCall, (req, res) => {
   });
 });
 
+router.get("/", async (req, res) => {
+  res.render("home", {});
+});
+
+router.get("/register", async (req, res) => {
+  res.render("register", {});
+});
+
+router.get("/forgot-password", async (req, res) => {
+  res.render("forgot-password", {});
+});
+
 export default router;
